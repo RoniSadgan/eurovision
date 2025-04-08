@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #1f1f1f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff007f; /* Neon Pink */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #00ffcc; /* Neon Green */
+  margin-bottom: 2rem;
+}
+
+footer {
+  font-size: 1rem;
+  color: #ffcc00; /* Neon Yellow */
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(135deg, #ff007f, #00ffcc);
+  padding: 3rem 2rem;
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Grid */
+main {
+  width: 100%;
+  padding: 3rem 1rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.image-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.image-card img {
+  width: 300px; /* Medium size: width set to 300px */
+  height: 200px; /* Medium size: height set to 200px */
+  object-fit: cover; /* Ensures the images don't stretch, they are cropped to fit */
+  border-radius: 10px;
+}
+
+.image-card h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff007f; /* Neon Pink */
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff5e99;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-card {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+

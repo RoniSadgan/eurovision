@@ -1,0 +1,305 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff6ec7, #ff9a8b, #ffb347);
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Ensuring all images are the same medium size */
+  img {
+    max-width: 100%;
+    height: 250px;  /* Set a fixed height for all images */
+    object-fit: cover; /* Make sure images cover the area without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  img:hover {
+    transform: scale(1.1); /* Zoom-in effect when hovered */
+  }
+  
+  /* Header Style */
+  header {
+    background: #000;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    animation: pulsate 2s infinite ease-in-out;
+
+    /* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff6ec7, #ff9a8b, #ffb347);
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Rainbow Effect on All Text */
+  h1, h2, h3, p {
+    background: linear-gradient(45deg, #ff6ec7, #ff9a8b, #ffb347);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Optional: Adding a slight shadow for better contrast */
+  }
+  
+  /* Header Style */
+  header {
+    background: #000;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    animation: pulsate 2s infinite ease-in-out;
+  }
+  
+  @keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #ff6ec7;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff9a8b;
+    transform: scale(1.1);
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #ffb347, #ff6ec7, #ff9a8b);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    border-radius: 15px;
+    animation: slideUp 1s ease-out;
+  }
+  
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Add vibrant rainbow effect on all headings and paragraphs */
+  h1, h2, h3, p {
+    background: linear-gradient(45deg, #ff6ec7, #ff9a8b, #ffb347);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    animation: rainbowText 3s infinite alternate;
+  }
+  
+  @keyframes rainbowText {
+    0% { background: linear-gradient(45deg, #ff6ec7, #ff9a8b, #ffb347); }
+    25% { background: linear-gradient(45deg, #ffd700, #ff8c00, #ffb6c1); }
+    50% { background: linear-gradient(45deg, #00bfff, #ff1493, #7fff00); }
+    75% { background: linear-gradient(45deg, #ff6347, #ff00ff, #ff1493); }
+    100% { background: linear-gradient(45deg, #ff6ec7, #ff9a8b, #ffb347); }
+  }
+  
+  /* Footer Style */
+  footer {
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+  }
+  
+  footer a {
+    color: #FFD700;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: #ff6ec7;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    animation: bounceIn 1.5s infinite alternate;
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  /* Card Layout for Eurovision Entries */
+  .card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #333;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Card Text */
+  .card h3 {
+    color: #ff6ec7;
+    font-size: 1.3em;
+    margin: 15px 0;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ff6ec7, #ff9a8b, #ffb347);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+  }
+  
+  .card p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.
+  
+  }
+  
+  @keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform:
+  
+      
+      body {
+  font-family: 'Arial Black', sans-serif; /* Bold and impactful font */
+  background-color: pink; /* Your background */
+  color: #333; /* Default text color */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center align for dramatic effect */
+}
+
+h1, h2, h3 {
+  font-family: 'Impact', sans-serif; /* Even bolder headings */
+  color: #ffeb3b; /* Bright yellow for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for pop */
+  background: linear-gradient(to right, #ff69b4, #ffeb3b); /* Gradient effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Enables the gradient to apply to the text */
+}
+
+p, a, li {
+  font-family: 'Verdana', sans-serif; /* Readable font for paragraphs */
+  color: #800080; /* Purple text for contrast with pink */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #00bfff; /* Bright blue for links */
+  font-weight: bold; /* Make links stand out */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for interaction */
+  color: #ff4081; /* Change color on hover */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points from lists */
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.glitter-text {
+  background: linear-gradient(to right, #ff69b4, #ffeb3b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.glitter-text::before {
+  content: attr(data-glitter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ffeb3b, #ff69b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  animation: glitter 2s linear infinite;
+}
+
+@keyframes glitter {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.eurovision-button {
+    background: linear-gradient(to right, #ff4081, #00bfff);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.eurovision-button:hover{
+    background: linear-gradient(to right, #00bfff, #ff4081);
+}
